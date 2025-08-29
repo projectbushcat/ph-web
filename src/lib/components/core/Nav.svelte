@@ -16,7 +16,8 @@
   onclick: (e: MouseEvent) => void,
   icon: string,
   label: string,
-  dark: boolean = true
+  dark: boolean = true,
+  beta: boolean = false
 )}
   <button
     class="flex items-center gap-2 rounded-4xl p-4 text-zinc-50 print:hidden"
@@ -28,6 +29,9 @@
   >
     <span class="material-symbols-outlined">{icon}</span>
     <span class="ph-body-small">{label}</span>
+    {#if beta}
+      <span class="ph-eyebrow mt-1 self-center">BETA</span>
+    {/if}
   </button>
 {/snippet}
 
@@ -52,7 +56,7 @@
 {/snippet}
 
 <nav class="sticky top-4 z-10">
-  {@render navButton(openDialog, 'menu', 'Pro-Human')}
+  {@render navButton(openDialog, 'menu', 'Pro-Human', true, true)}
   <dialog
     bind:this={navDialog}
     class="fixed top-0 left-0 m-0 h-full min-h-screen w-full max-w-none bg-zinc-900 p-4 text-zinc-50 md:w-fit md:rounded-tr-3xl md:rounded-br-3xl"
