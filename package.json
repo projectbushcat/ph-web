@@ -4,14 +4,26 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "watch": "npm-watch",
+    "wrangler-dev": "wrangler dev --live-reload",
     "dev": "vite dev",
     "build": "vite build",
+    "deploy": "npm run build && wrangler deploy",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint ."
+  },
+  "watch": {
+    "build": {
+      "extensions": "svelte,ts,html,css,js",
+      "patterns": [
+        "src",
+        "static"
+      ]
+    }
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.5",
@@ -26,6 +38,7 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-svelte": "^3.0.0",
     "globals": "^16.0.0",
+    "npm-watch": "^0.13.0",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
