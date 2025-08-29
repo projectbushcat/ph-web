@@ -12,5 +12,15 @@
   "observability": {
     "enabled": false
   },
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+  "routes": [
+    {
+      "custom_domain": true,
+      "pattern": "pro-human.us"
+    },
+    {
+      "custom_domain": true,
+      "pattern": "www.pro-human.us"
+    }
+  ]
 }
