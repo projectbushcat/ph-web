@@ -1,3 +1,62 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+  --color-ph-blue: #e0ebff;
+  --color-ph-yellow: #f7ffe0;
+  --color-ph-green: #e0ffe1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.ph-header {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.ph-eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.ph-stat {
+  font-size: 6rem;
+  letter-spacing: -8%;
+  font-weight: 300;
+}
+
+.ph-body-small {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+dialog {
+  display: none;
+}
+
+dialog[open] {
+  display: block;
+}
+
+section > p {
+  margin-top: 2.25rem;
+}
