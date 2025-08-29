@@ -27,7 +27,3 @@
     href="/timeline"
   />
 </Card>
-
-<Card>
-  <p>test</p>
-</Card>
