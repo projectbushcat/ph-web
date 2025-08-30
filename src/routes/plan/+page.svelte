@@ -22,20 +22,7 @@
   <Link href="#plan" label="Dive in" icon="expand_circle_down" />
 </Card>
 
-<Card id="plan" border>
-  <h2 class="ph-header">AI. Layoffs. Healthcare that doesn’t work.</h2>
-  <p>
-    <br />Corporate practices are out of control. We have sky-high debt that’s
-    only getting worse: interest payments are forecast to hit $1 trillion per
-    year starting in 2026.
-  </p>
-  <p>
-    And the government has… done nothing. In some ways, it’s made it worse. So
-    we need change, and we need it now.
-  </p>
-</Card>
-
-<Card fill="black">
+<Card fill="black" id="plan">
   <h2 class="ph-header">
     Pro-Human is a movement to build power for we, the people.
   </h2>
@@ -51,6 +38,19 @@
   <p>Enough is enough.</p>
 </Card>
 
+<Card border>
+  <h2 class="ph-header">AI. Layoffs. Healthcare that doesn’t work.</h2>
+  <p>
+    <br />Corporate practices are out of control. We have sky-high debt that’s
+    only getting worse: interest payments are forecast to hit $1 trillion per
+    year starting in 2026.
+  </p>
+  <p>
+    And the government has… done nothing. In some ways, it’s made it worse. So
+    we need change, and we need it now.
+  </p>
+</Card>
+
 <Card>
   <h2 class="ph-header">We can build bipartisan power by 2030. Here’s how:</h2>
 </Card>
@@ -61,8 +61,10 @@
 
 <Card>
   <div>
-    <p class="ph-eyebrow">In short:</p>
-    <h2 class="ph-header">Elect humans accountable to we, the people.</h2>
+    <p class="ph-eyebrow">In summary:</p>
+    <h2 class="ph-header">
+      Elect humans accountable to <br class="hidden md:block" />we, the people.
+    </h2>
   </div>
   <p><br />It's that simple.</p>
 </Card>
