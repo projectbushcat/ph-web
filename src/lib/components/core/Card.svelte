@@ -1,8 +1,9 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
+  import type { Fill } from './Fill';
 
   interface Props {
-    fill?: 'white' | 'gray' | 'black' | 'blue' | 'yellow' | 'green';
+    fill?: Fill;
     children?: Snippet;
     id?: string;
     border?: boolean;

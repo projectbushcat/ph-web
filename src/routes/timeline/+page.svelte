@@ -3,6 +3,9 @@
   import Card from '$lib/components/core/Card.svelte';
   import { timeline } from './timeline';
   import NextThreeElectionsCard from '$lib/components/cards/NextThreeElectionsCard.svelte';
+  import ProjectIndependenceCard from '$lib/components/cards/ProjectIndependenceCard.svelte';
+  import UnrigAmericaCard from '$lib/components/cards/UnrigAmericaCard.svelte';
+  import RealFreedomCard from '$lib/components/cards/RealFreedomCard.svelte';
 </script>
 
 <svelte:head>
@@ -71,4 +74,7 @@
   </article>
 {/each}
 
-<NextThreeElectionsCard />
+<NextThreeElectionsCard fill="white" />
+<ProjectIndependenceCard />
+<UnrigAmericaCard />
+<RealFreedomCard />

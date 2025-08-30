@@ -4,6 +4,7 @@
   import Nav from '$lib/components/core/Nav.svelte';
   import FooterCard from '$lib/components/cards/FooterCard.svelte';
   import { page } from '$app/state';
+  import BeehiivSignupCard from '$lib/components/cards/BeehiivSignupCard.svelte';
 
   let { children } = $props();
 
@@ -22,4 +23,5 @@
   {@render children?.()}
 </main>
 
+<BeehiivSignupCard />
 <FooterCard />

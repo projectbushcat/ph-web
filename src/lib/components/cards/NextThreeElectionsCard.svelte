@@ -1,9 +1,12 @@
 <script lang="ts">
   import Card from '../core/Card.svelte';
+  import type { Fill } from '../core/Fill';
   import Link from '../core/Link.svelte';
+
+  let { fill = 'gray' }: { fill?: Fill } = $props();
 </script>
 
-<Card fill="gray">
+<Card {fill}>
   <div>
     <p class="ph-eyebrow">Introducing…</p>
     <h2 class="ph-header">
