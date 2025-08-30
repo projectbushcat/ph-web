@@ -71,23 +71,3 @@
 {/each}
 
 <NextThreeElectionsCard />
-
-<style>
-  summary {
-    display: flex;
-    gap: 4px;
-  }
-
-  summary::before {
-    font-family: 'Material Symbols Outlined';
-    content: 'add_circle';
-  }
-
-  summary::marker {
-    content: '';
-  }
-
-  details[open] summary::before {
-    content: 'do_not_disturb_on';
-  }
-</style>

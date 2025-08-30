@@ -6,6 +6,10 @@
   import Link from '$lib/components/core/Link.svelte';
 </script>
 
+<svelte:head>
+  <title>Pro-Human's Plan to Win</title>
+</svelte:head>
+
 <Card fill="gray">
   <div>
     <p class="ph-eyebrow">Get Informed</p>

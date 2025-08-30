@@ -3,6 +3,10 @@
   import Link from '$lib/components/core/Link.svelte';
 </script>
 
+<svelte:head>
+  <title>Real Freedom | Pro-Human</title>
+</svelte:head>
+
 <Card>
   <div>
     <p class="ph-eyebrow">GET INVOLVED</p>

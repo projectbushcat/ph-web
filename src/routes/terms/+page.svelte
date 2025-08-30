@@ -2,6 +2,10 @@
   import Card from '$lib/components/core/Card.svelte';
 </script>
 
+<svelte:head>
+  <title>Terms of Use | Pro-Human</title>
+</svelte:head>
+
 <Card fill="gray">
   <div>
     <p class="ph-eyebrow">Last updated: 29-August 2025</p>

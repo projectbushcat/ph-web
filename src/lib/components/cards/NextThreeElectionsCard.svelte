@@ -3,7 +3,12 @@
   import Link from '../core/Link.svelte';
 </script>
 
-<Card>
-  <h2 class="ph-header">Here's our plan for the next three elections.</h2>
-  <Link href="/plan" icon="add_circle" label="What's Pro-Human?" />
+<Card fill="gray">
+  <div>
+    <p class="ph-eyebrow">Introducing…</p>
+    <h2 class="ph-header">
+      A people-powered roadmap for the next three elections.
+    </h2>
+  </div>
+  <Link href="/plan" icon="add_circle" label="Pro-Human's Plan to Win" />
 </Card>
