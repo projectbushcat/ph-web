@@ -41,8 +41,9 @@
       {#each era.items as item}
         <li>
           <details
-            class="rounded-4xl bg-zinc-100 p-4"
-            class:bg-zinc-50!={item.highlight}
+            class="bg-zinc-100 p-4"
+            class:rounded-4xl={!item.highlight}
+            class:bg-white!={item.highlight}
             class:border-2={item.highlight}
             class:border-rose-500={item.highlight}
             open={item.highlight || undefined}
