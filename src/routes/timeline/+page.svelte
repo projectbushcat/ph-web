@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Button from '$lib/components/core/Button.svelte';
+  import Link from '$lib/components/core/Link.svelte';
   import Card from '$lib/components/core/Card.svelte';
   import { timeline } from './timeline';
 </script>
@@ -17,7 +17,7 @@
     Explore America’s authoritarian history with Pro-Human’s interactive
     timeline.
   </p>
-  <Button
+  <Link
     icon="expand_circle_down"
     label="Dive in"
     href={`#${timeline[0].dates}`}
@@ -25,7 +25,7 @@
 </Card>
 
 {#each timeline as era}
-  <article class="m-auto my-8 flex max-w-[544px] flex-col gap-8" id={era.dates}>
+  <article class="m-auto my-8 flex max-w-prose flex-col gap-8" id={era.dates}>
     <section class="flex flex-col gap-8 pt-32">
       <div>
         <p class="ph-eyebrow normal-case!">{era.dates}</p>

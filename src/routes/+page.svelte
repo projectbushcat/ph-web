@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Button from '$lib/components/core/Button.svelte';
+  import Link from '$lib/components/core/Link.svelte';
   import Card from '$lib/components/core/Card.svelte';
   import usa from '$lib/assets/usa.svg';
 
@@ -21,7 +21,7 @@
     <h1 class="ph-header mt-3">You should be furious.</h1>
   </div>
   <p>For 80 years, America has been rigged to benefit elites.</p>
-  <Button
+  <Link
     icon="add_circle"
     label="How elites rigged everything"
     href="/timeline"

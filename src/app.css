@@ -12,12 +12,18 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+input,
+input:autofill,
+textarea {
   font-family:
     -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5rem;
+}
+
+body {
   padding: 1rem;
 }
 
@@ -49,12 +55,8 @@ body:has(dialog[open]) {
   font-weight: 500;
 }
 
-dialog {
+dialog:not([open]) {
   display: none;
-}
-
-dialog[open] {
-  display: block;
 }
 
 section > p {
