@@ -2,6 +2,7 @@
   import Link from '$lib/components/core/Link.svelte';
   import Card from '$lib/components/core/Card.svelte';
   import { timeline } from './timeline';
+  import NextThreeElectionsCard from '$lib/components/cards/NextThreeElectionsCard.svelte';
 </script>
 
 <svelte:head>
@@ -14,7 +15,7 @@
     <h1 class="ph-header">How Elites Rigged Everything</h1>
   </div>
   <p>
-    Explore America’s authoritarian history with Pro-Human’s interactive
+    <br />Explore America’s authoritarian history with Pro-Human’s interactive
     timeline.
   </p>
   <Link
@@ -25,13 +26,16 @@
 </Card>
 
 {#each timeline as era}
-  <article class="m-auto my-8 flex max-w-prose flex-col gap-8" id={era.dates}>
+  <article
+    class="m-auto my-8 flex max-w-prose flex-col gap-8 md:px-18"
+    id={era.dates}
+  >
     <section class="flex flex-col gap-8 pt-32">
       <div>
         <p class="ph-eyebrow normal-case!">{era.dates}</p>
         <h2 class="ph-header">{era.title}</h2>
       </div>
-      <p>{era.intro}</p>
+      <p><br />{era.intro}</p>
     </section>
     <ol class="flex flex-col gap-4">
       {#each era.items as item}
@@ -65,6 +69,8 @@
     <p>{@html era.outro}</p>
   </article>
 {/each}
+
+<NextThreeElectionsCard />
 
 <style>
   summary {

@@ -4,7 +4,9 @@ declare global {
   namespace App {
     // interface Error {}
     // interface Locals {}
-    interface PageData {}
+    interface PageData {
+      fill?: 'ph-blue' | 'ph-yellow' | 'ph-green';
+    }
     // interface PageState {}
     interface Platform {
       env: {};
