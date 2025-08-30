@@ -1,7 +1,8 @@
 <script lang="ts">
-  import Button from '$lib/components/core/Button.svelte';
+  import Link from '$lib/components/core/Link.svelte';
   import Card from '$lib/components/core/Card.svelte';
   import { timeline } from './timeline';
+  import NextThreeElectionsCard from '$lib/components/cards/NextThreeElectionsCard.svelte';
 </script>
 
 <svelte:head>
@@ -14,10 +15,10 @@
     <h1 class="ph-header">How Elites Rigged Everything</h1>
   </div>
   <p>
-    Explore America’s authoritarian history with Pro-Human’s interactive
+    <br />Explore America’s authoritarian history with Pro-Human’s interactive
     timeline.
   </p>
-  <Button
+  <Link
     icon="expand_circle_down"
     label="Dive in"
     href={`#${timeline[0].dates}`}
@@ -25,20 +26,24 @@
 </Card>
 
 {#each timeline as era}
-  <article class="m-auto my-8 flex max-w-[544px] flex-col gap-8" id={era.dates}>
+  <article
+    class="m-auto my-8 flex max-w-prose flex-col gap-8 md:px-18"
+    id={era.dates}
+  >
     <section class="flex flex-col gap-8 pt-32">
       <div>
         <p class="ph-eyebrow normal-case!">{era.dates}</p>
         <h2 class="ph-header">{era.title}</h2>
       </div>
-      <p>{era.intro}</p>
+      <p><br />{era.intro}</p>
     </section>
     <ol class="flex flex-col gap-4">
       {#each era.items as item}
         <li>
           <details
-            class="rounded-4xl bg-zinc-100 p-4"
-            class:bg-zinc-50!={item.highlight}
+            class="bg-zinc-100 p-4"
+            class:rounded-4xl={!item.highlight}
+            class:bg-white!={item.highlight}
             class:border-2={item.highlight}
             class:border-rose-500={item.highlight}
             open={item.highlight || undefined}
@@ -66,22 +71,4 @@
   </article>
 {/each}
 
-<style>
-  summary {
-    display: flex;
-    gap: 4px;
-  }
-
-  summary::before {
-    font-family: 'Material Symbols Outlined';
-    content: 'add_circle';
-  }
-
-  summary::marker {
-    content: '';
-  }
-
-  details[open] summary::before {
-    content: 'do_not_disturb_on';
-  }
-</style>
+<NextThreeElectionsCard />
