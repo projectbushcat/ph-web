@@ -79,3 +79,7 @@ summary::marker {
 details[open] summary::before {
   content: 'do_not_disturb_on';
 }
+
+strong {
+  font-weight: 500;
+}

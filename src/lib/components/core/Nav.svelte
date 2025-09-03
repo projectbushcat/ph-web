@@ -106,7 +106,7 @@
             {@render navLink(
               navDialog,
               '/timeline',
-              'How Elites Rigged Everything'
+              'Timeline of American Corruption'
             )}
             {@render navLink(navDialog, '/plan', `Pro-Human's Plan to Win`)}
           </div>
