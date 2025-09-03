@@ -33,7 +33,12 @@
     />
     <h1 class="ph-header mt-3">You should be furious.</h1>
   </div>
-  <p><br />For 80 years, America has been rigged to benefit elites.</p>
+  <p>
+    <br />Elites have rigged
+    <a href="/timeline#RELIGION" class="underline">religion</a>,
+    <a href="/timeline#EDUCATION" class="underline">education</a>, and
+    <a href="/timeline#ELECTIONS" class="underline">elections</a>.
+  </p>
   <Link icon="add_circle" label="Explore our hidden history" href="/timeline" />
 </Card>
 

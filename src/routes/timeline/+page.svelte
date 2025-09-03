@@ -26,14 +26,10 @@
     — while ordinary Americans organized to reclaim their voice.
   </p>
   <p>
-    These aren't isolated incidents. They're part of a pattern that stretches
-    across decades, connecting corporate boardrooms to political strategy and
-    grassroots resistance. Understanding these connections shows us both how we
-    got here and how we can build something better.
-  </p>
-  <p>
-    Now, more than ever, we must work together to build a democracy that works
-    for we, the people.
+    <strong>These aren't isolated incidents.</strong> They're part of a pattern that
+    stretches across decades, connecting corporate boardrooms to political strategy
+    and grassroots resistance. Understanding these connections shows us both how
+    we got here and how we can build something better.
   </p>
   <div class="flex flex-col flex-wrap gap-4 md:flex-row">
     <span>Dive in:</span>
@@ -116,7 +112,7 @@
   </article>
 {/each}
 
-<NextThreeElectionsCard fill="white" />
+<!-- <NextThreeElectionsCard fill="white" />
 <ProjectIndependenceCard />
 <UnrigAmericaCard />
-<RealFreedomCard />
+<RealFreedomCard /> -->
